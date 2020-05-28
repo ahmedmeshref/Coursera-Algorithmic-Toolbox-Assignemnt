@@ -22,6 +22,16 @@ function readLine(line) {
 
 function getFibMod(n, m) {
     // write your code here
+    if (n <= 1) return n;
+
+    let first = 0;
+    let second = 1;
+
+    for (let i = 1; i < n; i++) {
+        [first, second] = [second, (first + second)%m]
+    }
+
+    return second;
 }
 
 module.exports = getFibMod;

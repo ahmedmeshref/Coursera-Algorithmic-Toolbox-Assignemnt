@@ -21,6 +21,10 @@ function readLine(line) {
 
 function gcd(a, b) {
     // write your code here
+    if (a == 0 || b == 0) {
+        return Math.max(a, b);
+    }
+    return gcd(b, a % b);
 }
 
 module.exports = gcd;

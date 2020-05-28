@@ -14,8 +14,17 @@ function readLine(line) {
     process.exit();
 }
 
+var memo = new Object()
 function fib(n) {
     // write your code here
+    if (n <= 1) return n
+    if (n in memo) return memo[n]
+    else {
+        f = fib(n - 1) + fib(n - 2);
+    }
+    memo[n] = f;
+    return f;
+
 }
 
 module.exports = fib;

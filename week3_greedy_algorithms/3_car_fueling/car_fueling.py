@@ -14,20 +14,20 @@ def compute_min_refills(distance, tank, stops):
     min_refills = 0
     current_stop = 0
     while current_pos + tank < distance:
-        furthest_stop = False
-        while current_stop < len(stops) and current_pos + tank >= stops[current_stop]:
-            furthest_stop = stops[current_stop]
+        previous_stop = current_stop
+        while (current_stop < len(stops)) and (current_pos + tank >= stops[current_stop]):
             current_stop += 1
-        # if no furthest_stop can be reached, then it is impossible to reach b
-        if not furthest_stop:
+        # if no next stop can be reached, then it is impossible to reach b
+        if previous_stop == current_stop:
             return -1
-        current_pos = furthest_stop
+        current_pos = stops[current_stop - 1]
         min_refills += 1
     return min_refills
 
 
 if __name__ == '__main__':
-    d, m, _, *stops = map(int, sys.stdin.read().split())
+    # d, m, _, *stops = map(int, sys.stdin.read().split())
+    d, m, _, *stops = map(int, input().split())
     print(compute_min_refills(d, m, stops))
 
 

@@ -5,14 +5,16 @@ This repository contains all solutions for the assignemnt' of the  [Algorithmic 
 
 ### Week 1- Programming Challenges ([PDF](/week1_programming_challenges/week1_programming_challenges.pdf))
 
-- [Sum of Two Digits](/week1_programming_challenges/1_sum_of_two_digits/APlusB.py)
-- [Maximum Pairwise Product](/week1_programming_challenges/2_maximum_pairwise_product/max_pairwise_product.py)
+- [Sum of Two Digits PY](/week1_programming_challenges/1_sum_of_two_digits/APlusB.py)
+- [Maximum Pairwise Product PY](/week1_programming_challenges/2_maximum_pairwise_product/max_pairwise_product.py)
+- [Maximum Pairwise Product JS](/week1_programming_challenges/2_maximum_pairwise_product/max_pairwise_product.js)
 
 
 ### Week 2- Algorithmic Warmup ([PDF](/week1_programming_challenges/week2_algorithmic_warmup.pdf))
 
-- [Fibonacci Number](/assignment%20solutions/2.1%20fibonacci.py)
-- [Last Digit of a Large Fibonacci Number](/assignment%20solutions/2.2%20lastfibodigit.py)
+- [Fibonacci Number PY](/week2_algorithmic_warmup/1_fibonacci_number/fibonacci.py)
+- [Fibonacci Number JS](/week2_algorithmic_warmup/1_fibonacci_number/fibonacci.js)
+- [Last Digit of a Large Fibonacci Number PY](/week2_algorithmic_warmup/2_last_digit_of_fibonacci_number/fibonacci_last_digit.py)
 - [Greatest Common Divisor](/assignment%20solutions/2.3%20gcd.py)
 - [Least Common Multiple](/assignment%20solutions/2.4%20lcm.py)
 - [Fibonacci Number Again](/assignment%20solutions/2.5%20pisano.py)

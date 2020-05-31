@@ -11,26 +11,27 @@ def optimal_summands(n):
     :return: two lines, the first represents the number of pairwise distinct positive integers,
     the second represents all the output distinct integers
     """
-    summands = []
+    prizes = []
     # if n is 0 candies
     if n == 0:
-        return summands
+        return prizes
     while n > 0:
-        last_prize = summands[-1] if summands else 0
+        last_prize = prizes[-1] if prizes else 0
         if n <= last_prize:
-            summands[-1] += n
-            return summands
+            prizes[-1] += n
+            n = 0
         else:
             new_prize = last_prize + 1
-            summands.append(new_prize)
+            prizes.append(new_prize)
             n -= new_prize
-    return summands
+    return prizes
 
 
 if __name__ == '__main__':
-    # input = sys.stdin.read()
     n = int(input())
-    summands = optimal_summands(n)
-    print(len(summands))
-    for x in summands:
-        print(x, end=' ')
+    prizes_l = optimal_summands(n)
+    print(len(prizes_l))
+    for prize in prizes_l:
+        print(prize, end=' ')
+
+

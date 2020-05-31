@@ -33,28 +33,28 @@ This repository contains all solutions for the assignemnt' of the  [Algorithmic 
 
 ### Week 4- Divide And Conquer ([PDF](/week1_programming_challenges/week4_divide_and_conquer.pdf))
 
-- [Binary Search](/assignment%20solutions/4.1%20binary.py)
-- [Majority Element](/assignment%20solutions/4.2%20majority.py)
-- [Improving QuickSort](/assignment%20solutions/4.3%20quicksort3.py)
-- [Inversions](/assignment%20solutions/4.4%20inversions.py)
-- [Organizing a Lottery](/assignment%20solutions/4.5%20lottery.py)
-- [Closest Points](/assignment%20solutions/4.6%20closest%20points.py)
+- [Binary Search]()
+- [Majority Element]()
+- [Improving QuickSort]()
+- [Inversions]()
+- [Organizing a Lottery]()
+- [Closest Points]()
 
 
 ### Week 5- Dynamic Programming 1 ([PDF](/week1_programming_challenges/week5_dynamic_programming1.pdf))
 
-- [Money Change Again](/assignment%20solutions/5.1%20money%20change.py)
-- [Primitive Calculator](/assignment%20solutions/5.2%20primitive%20calculator.py)
-- [Edit Distance](/assignment%20solutions/5.3%20edit%20distance.py)
-- [Longest Common Subsequence of Two Sequence](/assignment%20solutions/5.4%20LCS%202%20sequences.py)
-- [Longest Common Subsequence of Three Sequence](/assignment%20solutions/5.5%20LCS%203%20sequences.py)
+- [Money Change Again]()
+- [Primitive Calculator]()
+- [Edit Distance]()
+- [Longest Common Subsequence of Two Sequence]()
+- [Longest Common Subsequence of Three Sequence]()
 
 
 ### Week 6- Dynamic Programming 2 ([PDF](/week1_programming_challenges/week6_dynamic_programming2.pdf))
 
-- [Maximum Amount of Gold](/assignment%20solutions/6.1%20max%20gold.py)
-- [Partitioning Souvenirs](/assignment%20solutions/6.2%20partition%20souvenirs.py)
-- [Maximum Value of an Arithmetic Expression](/assignment%20solutions/6.3%20arithmetic%20expression.py)
+- [Maximum Amount of Gold]()
+- [Partitioning Souvenirs]()
+- [Maximum Value of an Arithmetic Expression]()
 
 
 # Contributing

@@ -1,19 +1,22 @@
-#Uses python3
+# Uses python3
 
-import sys
 
-def max_dot_product(a, b):
-    #write your code here
-    res = 0
-    for i in range(len(a)):
-        res += a[i] * b[i]
-    return res
+def max_ads_revenue(a, b):
+    """
+    max_ads_revenue function distribute the ads profite given in a list a among the slots given in b to
+     maximize the total revenue.
+    :param a: list of integers, where a𝑖 represents the profit per click of the 𝑖-th ad
+    :param b: list of integers, where b𝑖 is the average number of clicks per day of the 𝑖-th slot
+    :return: an integer represents the max profit possible of placing the ads on the website
+    """
+    # sort a, b
+    a.sort()
+    b.sort()
+    return sum([ad*click for ad, click in zip(a, b)])
+
 
 if __name__ == '__main__':
-    input = sys.stdin.read()
-    data = list(map(int, input.split()))
-    n = data[0]
-    a = data[1:(n + 1)]
-    b = data[(n + 1):]
-    print(max_dot_product(a, b))
-    
+    _ = input()
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
+    print(max_ads_revenue(a, b))

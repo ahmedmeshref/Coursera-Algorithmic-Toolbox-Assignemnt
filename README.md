@@ -28,7 +28,8 @@ This repository contains all solutions for the assignemnt' of the  [Algorithmic 
 
 - [Money Change PY](/week3_greedy_algorithms/1_money_change/change.py)
 - [Money Change JS](/week3_greedy_algorithms/1_money_change/change.js)
-- [Maximum Value of the Loot (Fractional Knapsack)](/assignment%20solutions/3.2%20maxloot.py)
+- [Maximum Value of the Loot (Fractional Knapsack) PY](/week3_greedy_algorithms/2_maximum_value_of_the_loot/fractional_knapsack.py)
+- [Maximum Value of the Loot (Fractional Knapsack) JS](/week3_greedy_algorithms/2_maximum_value_of_the_loot/fractional_knapsack.js)
 - [Car Fueling PY](/week3_greedy_algorithms/3_car_fueling/car_fueling.py)
 - [Maximum Advertisement Revenue (Maximum Dot Product) PY](/week3_greedy_algorithms/4_maximum_advertisement_revenue/dot_product.py)
 - [Maximum Advertisement Revenue (Maximum Dot Product) JS](/week3_greedy_algorithms/4_maximum_advertisement_revenue/dot_product.js)

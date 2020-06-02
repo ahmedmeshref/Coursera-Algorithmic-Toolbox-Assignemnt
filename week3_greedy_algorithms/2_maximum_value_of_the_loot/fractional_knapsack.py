@@ -1,23 +1,23 @@
 
-def get_optimal_value(bag_w, items):
+def get_optimal_value(capacity, items):
     """
     get_optimal_value function implements an algorithm for the fractional knapsack problem
-    :param bag_w: Number represents the total capacity of the bag
+    :param capacity: Number represents the total capacity of the bag
     :param items: list of list that contains values and weights of each item, where items[𝑖] = [value(𝑖), weight(𝑖)]
-    :return: decimal number represents the maximal value of fractions of items that fit into the bag of weight bag_w.
+    :return: decimal number represents the maximal value of fractions of items that fit into the bag of weight capacity.
     """
     out = 0
     # sort all items by their price_per_unit
     items.sort(key=lambda x: x[0]/x[1], reverse=True)
     for v, w in items:
-        can_fit = bag_w - w
+        can_fit = capacity - w
         # if the element can fit into the bag, take the whole item.
         if can_fit >= 0:
             out += v
-            bag_w = can_fit
-        # otherwise, take as much of the item's weight as possible (price_per_unit * bag_weight).
+            capacity = can_fit
+        # otherwise, take as much of the item's weight as possible (price_per_unit * capacity).
         else:
-            out += (v/w) * bag_w
+            out += (v/w) * capacity
             return out
     return out
 

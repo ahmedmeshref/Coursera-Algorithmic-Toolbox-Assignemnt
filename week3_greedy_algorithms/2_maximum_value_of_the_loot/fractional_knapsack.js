@@ -35,6 +35,28 @@ function readLine(line) {
 
 function max(count, capacity, values, weights) {
     // write your code here
+    let items = [],
+        tot_val = 0,
+        reminder;
+    for (let i = 0; i < count; i++) {
+        items.push([values[i], weights[i]]);
+    }
+    // so items by the value_per_unit
+    items.sort((a, b) => (b[0] / b[1]) - (a[0] / a[1]))
+    for (const [v, w] of items) {
+        reminder = capacity - w;
+        if (reminder >= 0) {
+            tot_val += v;
+            capacity = reminder
+        } else {
+            tot_val += (v/w) * capacity;
+            return tot_val;
+        }
+    }
+    return tot_val;
 }
 
 module.exports = max;
+
+
+

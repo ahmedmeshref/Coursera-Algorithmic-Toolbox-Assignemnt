@@ -1,17 +1,33 @@
-# Uses python3
-import sys
 
-def get_optimal_value(capacity, weights, values):
-    value = 0.
-    # write your code here
-
-    return value
+def get_optimal_value(bag_w, items):
+    """
+    get_optimal_value function implements an algorithm for the fractional knapsack problem
+    :param bag_w: Number represents the total capacity of the bag
+    :param items: list of list that contains values and weights of each item, where items[𝑖] = [value(𝑖), weight(𝑖)]
+    :return: decimal number represents the maximal value of fractions of items that fit into the bag of weight bag_w.
+    """
+    out = 0
+    # sort all items by their price_per_unit
+    items.sort(key=lambda x: x[0]/x[1], reverse=True)
+    for v, w in items:
+        can_fit = bag_w - w
+        # if the element can fit into the bag, take the whole item.
+        if can_fit >= 0:
+            out += v
+            bag_w = can_fit
+        # otherwise, take as much of the item's weight as possible (price_per_unit * bag_weight).
+        else:
+            out += (v/w) * bag_w
+            return out
+    return out
 
 
 if __name__ == "__main__":
-    data = list(map(int, sys.stdin.read().split()))
-    n, capacity = data[0:2]
-    values = data[2:(2 * n + 2):2]
-    weights = data[3:(2 * n + 2):2]
-    opt_value = get_optimal_value(capacity, weights, values)
+    n, capacity = map(int, input().split())
+    items = []
+    for i in range(n):
+        items.append(list(map(int, input().split())))
+    opt_value = get_optimal_value(capacity, items)
     print("{:.10f}".format(opt_value))
+
+

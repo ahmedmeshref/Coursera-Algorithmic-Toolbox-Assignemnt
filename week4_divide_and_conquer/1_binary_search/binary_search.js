@@ -30,10 +30,21 @@ rl.once('line', line => {
     })
 });
 
-function binarySearch(arr, key) {
+function binarySearch(arr, tar) {
     let left = 0,
-        right = arr.length;
-    while (left <= right){}
+        right = arr.length,
+        mid;
+    while (left <= right){
+        mid = Math.floor(left+right / 2);
+        if (arr[mid] === tar){
+            return mid;
+        } else if (arr[mid] < tar){
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+    return -1;
 }
 
 module.exports = binarySearch;

@@ -40,7 +40,8 @@ This repository contains all solutions for the assignemnt' of the  [Algorithmic 
 
 ### Week 4- Divide And Conquer ([PDF](/week1_programming_challenges/week4_divide_and_conquer.pdf))
 
-- [Binary Search]()
+- [Binary Search PY](/week4_divide_and_conquer/1_binary_search/binary_search.py)
+- [Binary Search JS](/week4_divide_and_conquer/1_binary_search/binary_search.js)
 - [Majority Element]()
 - [Improving QuickSort]()
 - [Inversions]()

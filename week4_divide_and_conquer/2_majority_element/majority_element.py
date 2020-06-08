@@ -17,7 +17,8 @@ from collections import Counter
 # O(n) solution
 def get_maj_element(nums, len_nums):
     """
-    get_maj_element check whether an input sequence contains a majority element which appeared more than len_of_nums/2
+    get_maj_element check whether an input sequence contains a majority element which appeared more
+     than len_of_nums/2
     :param nums: list of integer
     :param len_nums: integer represents the number of elements in nums
     :return: 1 if a majority element exists, 0 otherwise
@@ -34,3 +35,4 @@ if __name__ == '__main__':
     lst = list(map(int, input().split()))
     # get_maj_element O(n) solution
     print(get_maj_element(lst, n))
+
